@@ -1,0 +1,320 @@
+/* General
+ ----------------------------------------------- */
+body {
+  font-family: 'Open Sans', sans-serif;
+  overflow-y:scroll;
+}
+div#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%; /* tells the images to fill the width of the parent container */
+}
+h3 {
+  margin: 0 0 1em 0;
+}
+
+/* Icon Fonts
+ ----------------------------------------------- */
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-xkryyx');
+	src:url('../fonts/icomoon.eot?#iefix-xkryyx') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-xkryyx') format('woff'),
+		url('../fonts/icomoon.ttf?-xkryyx') format('truetype'),
+		url('../fonts/icomoon.svg?-xkryyx#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Heading
+ ----------------------------------------------- */
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+
+}
+/* logo text */
+a#logo {
+  text-align: center;
+  margin: 0;
+}
+h1 {
+  font-family: 'Pompiere', sans-serif;
+  margin: 15px 0;
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+
+/* Navigation
+ ----------------------------------------------- */
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+  display: none;
+}
+nav ul li {
+  display: inline-block; /* inline first then block */
+}
+nav ul a {
+/*  font-weight: 800;*/
+  padding: 15px 10px; /* these settings ease the touch while using mobile device */
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+select {
+  width: 94%;
+  margin: .2em 0 .2em 3%;
+  padding: .2em;
+  background-color: white;
+}
+
+
+/* Footer
+ ----------------------------------------------- */
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
+}
+footer img.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+
+/* Page: Portfolio
+ ----------------------------------------------- */
+ul#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  background: #f5f5f5;
+  color: #bdc3c7;
+}
+ul#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #bdc3c7;
+}
+
+
+/* Page: About
+ ----------------------------------------------- */
+section img.profile-photo {
+  clear: both;
+  display: block; /* by default img are displayed inline */
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+
+
+/* Page: Contact
+ ----------------------------------------------- */
+section ul.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+section ul.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat; /* by default background images repeat */
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+section ul.contact-info li.phone a {
+  background-image: url('../images/phone.png')
+}
+section ul.contact-info li.mail a {
+  background-image: url('../images/mail.png')
+}
+section ul.contact-info li.git a {
+  background-image: url('../images/gitHub.png')
+}
+section ul.contact-info li.twitter a {
+  background-image: url('../images/twitter.png')
+}
+
+
+/* Page: Blog
+ ----------------------------------------------- */
+
+h3 span {
+  font-weight: 200;
+}
+.blog-nav li::before {
+	font-family: 'icomoon';
+  	content: attr(data-icon);
+  margin-right: 5px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.blog-nav {
+  padding: 0;
+}
+.blog-nav li {
+  list-style: none;
+  font-size: .75em;
+  margin-top: 5px;
+}
+.blog-entry {
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+}
+.blog-entry,
+#blog-recent li {
+  border-bottom: 1px solid #cfcfcf;
+}
+.blog-entry:last-child,
+#blog-recent li:last-child {
+  border-bottom: inherit;
+}
+.read-more {
+  width: 100px;
+  padding: 3px;
+  text-align: center;
+  float: right;
+  background-color: gray;
+  opacity: .3;
+  font-size: .9em;
+  border-radius: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: white;
+}
+.read-more:hover {
+  opacity: 1;
+}
+#blog-recent,
+#blog-tags {
+  margin-top: 50px;
+}
+#blog-recent li {
+  margin-bottom: 10px;
+}
+#blog-recent a {
+  padding: 0;
+}
+#blog-tags .read-more {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#blog-tags .read-more:last-child {
+  margin-right: 0;
+}
+.box-overlay {
+  background: url("http://lorempixel.com/400/200/");
+  width: 100%;
+  box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, .45);
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  margin: 5% auto 0 auto;
+  background-size: cover;
+  overflow: hidden;
+}
+.image-overlay {
+  -webkit-transition: .25s;
+  transition: .25s;
+  opacity: 0;
+  background: rgba(0, 0, 0, .6);
+  text-align: center;
+  padding: 45px 0 66px 0;
+}
+.symbol-overlay {
+  color: white;
+  font-size: 3em;
+  padding: 0 .5em;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 5px;
+}
+.box-overlay:hover .image-overlay {
+  opacity: 1;
+}
+#jump-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 20px;
+  background-color: gray;
+  color: white;
+  border-radius: 100%;
+  opacity: .1;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+#jump-top:hover {
+  opacity: 1;
+}
+
+
+/* Colors
+ ----------------------------------------------- */
+/* site body */
+body {
+  background: #fff;
+  color: #999;
+}
+header {
+  background: #1f8dd6;
+  border-color: #2d3e50;
+}
+/* nav background on mobile devices */
+nav {
+  background: #2d3e50;
+}
+h1, h2 {
+  color: #E8EBED;
+}
+/* links */
+a {
+  color: #1f8dd6;
+}
+/* nav link
+nav a:visited {
+  color: #303538;
+} */
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #f5f5f5;
+}

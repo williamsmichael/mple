@@ -1,0 +1,249 @@
+/* Sandbox Features & Layout
+---------------------------------------------- */
+
+html {
+  background: black url("../images/footer_lodyas.png");
+  color: #333;
+  font-family: open-sans, sans-serif;
+}
+body,
+#sandbox {
+  padding: 0;
+  margin: 0;
+}
+a:link {
+  text-decoration: none;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot?w1zan0');
+  src:url('../fonts/icomoon.eot?#iefixw1zan0') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?w1zan0') format('woff'),
+    url('../fonts/icomoon.ttf?w1zan0') format('truetype'),
+    url('../fonts/icomoon.svg?w1zan0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  font-family: sarina;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: .45em;
+  font-size: 2em;
+  color: #54C06B;
+  text-shadow: 3px 4px 5px rgba(0, 0, 0, .6);
+  background-clip: text;
+}
+
+
+/* Container for all draggable divs
+---------------------------------------------- */
+.drag-container {
+  position: relative;
+  width: 100%;
+}
+
+
+/* Individual Divs & Overlay
+---------------------------------------------- */
+.preview-container {
+  width: 250px;
+  height: 250px;
+  box-shadow: 10px 10px 20px rgba(0,0,0,.6);
+  position: absolute;
+  /*  left: 0;*/
+  /*  right: 0;*/
+}
+.iPhone4 {
+  height: 375px; /* 2:3 */
+}
+.iPhone5 {
+  height: 443.75px; /* 41:70 */
+}
+.preview-container,
+.preview-container img,
+.preview-overlay {
+  border-radius: 20px;
+}
+.preview-container img,
+.preview-overlay {
+  width: 100%;
+  height: 100%;
+}
+.preview-overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  /*  z-index: 0 !important;*/
+  text-align: center;
+  display: table;
+}
+.preview-overlay:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, .75);
+}
+.preview-text-container {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: sans-serif;
+  font-size: 3em;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: inherit;
+  cursor: move;
+}
+.preview-text {
+  background: rgba(255, 255, 255, .8);
+  padding: 0 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 25px;
+}
+.preview-text li {
+  list-style: none;
+  text-align: left;
+  font-size: .3em;
+  padding: .2em 0;
+  color: #333;
+  font-weight: 500;
+}
+.preview-text li:first-child {
+  padding-top: 10px;
+}
+.preview-text li:last-child {
+  padding-bottom: 10px;
+}
+.preview-text li::before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  margin-right: 5px;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  padding-right: 10px;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Image Lightbox
+---------------------------------------------- */
+#imagelightbox {
+  position: fixed;
+  z-index: 9999;
+  -ms-touch-action: none;
+  touch-action: none;
+  border-radius: 20px;
+}
+
+/* Image Lightbox Overlay
+---------------------------------------------- */
+#imagelightbox-overlay {
+  background-color: #fff;
+  background-color: rgba( 255, 255, 255, .9 );
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* Image Lightbox Caption
+---------------------------------------------- */
+#imagelightbox-caption {
+  text-align: center;
+  color: #fff;
+  background-color: #666;
+  position: fixed;
+  z-index: 10001;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.625em;
+  font-size: .9em;
+}
+
+#imagelightbox-overlay,
+#imagelightbox-caption {
+  -webkit-animation: fade-in .25s linear;
+  animation: fade-in .25s linear;
+}
+@-webkit-keyframes fade-in {
+  from	{ opacity: 0; }
+  to		{ opacity: 1; }
+}
+@keyframes fade-in {
+  from	{ opacity: 0; }
+  to		{ opacity: 1; }
+}
+
+/* Responsive
+==================================== */
+
+/* iPads (landscape) ----------- */
+@media screen
+  and (max-width: 1024px) {
+    html {
+      background: #3b3b3b url("../images/swirl_pattern.png");
+    }
+    h1 {
+      text-shadow: 3px 4px 5px rgba(0, 0, 0, .8);
+    }
+    .preview-container {
+      width: 76px; /* according to the specs */
+      height: 76px;
+      cursor: move;
+      box-shadow: 3px 4px 5px rgba(0,0,0,.6);
+    }
+    .preview-container,
+    .preview-container img,
+    .preview-overlay {
+      border-radius: 5px;
+    }
+    .iPhone4 {
+      height: 114px; /* 2:3 */
+    }
+    .iPhone5 {
+      height: 129.756098px; /* 41:70 */
+    }
+    .preview-overlay {
+      display: none;
+      -webkit-transition: none;
+      transition: none;
+    }
+    #imagelightbox-caption {
+      font-size: .7em;
+    }
+  }
+
+/* Smartphones (landscape) ----------- */
+@media screen
+  and (max-width: 480px) {
+    h1 {
+      margin-top: .45em;
+    }
+    .preview-container { /* according to the specs */
+      width: 57px;
+      height: 57px;
+    }
+    .iPhone4 {
+      height: 85.5px; /* 2:3 */
+    }
+    .iPhone5 {
+      height: 97.3170732px; /* 41:70 */
+    }
+    #imagelightbox-caption {
+      font-size: .5em;
+    }
+  }

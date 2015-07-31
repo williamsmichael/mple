@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Miss South Asia Europe Contest </title>
+    <link href="forms.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+      body {
+        background-image: url();
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="main_content">
+      <div id="header">
+        <div id="logo">
+          <a href="http://www.missasiaeurope.com/registration.html" target="_blank"><img src="logo.png"></a>
+        </div>
+        <div id="menu_bar">
+          <div id="menu">
+            <ul>
+              <li>Home</li>
+              <li>About The Pageant</li>
+              <li><a href="registration.html">Registration</a></li>
+              <li>Audition</li>
+              <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <h1 id="name"><p>Miss South Asia Europe Contest</p></h1>
+      </div>
+
+      <div id="content">
+        <div class="wrapper">
+          <div id="registration_content">
+
+            <br>
+            <h1>Registration</h1><br>
+            <div>
+              <h3>
+                Here comes the opportunity for you to become the Miss South Asia Europe 2014 pageant!</h3><br>
+              <h3>Contestants Requirements:</h3>
+
+              <ul>
+                <li>&#45; Any young girl between the age of 17&#45;27</li>
+                <li>&#45; Must be a South Asian currently a resident of Europe (Regardless of the place of birth)</li>
+                <li>&#45; The applicant is not/has never been married never given birth to a child is not currently pregnant or a parent</li>
+
+                <li>&#45; IT'S THE AUTHENTIC 'YOU' THAT WILL MAKE A DIFFERENCE</li>
+              </ul><br>
+
+              <h3>Miss South Asia Europe Pageant Segments:</h3>
+
+              <ul>
+                <li>&#45; Indian Traditional segment for all</li>
+                <li>&#45; Evening Gown segment for all</li>
+                <li>&#45; Talent Round segment for top 10</li>
+                <li>&#45; Question &amp; Answer segment for top 5</li>
+                <li>&#45; NO SWIMSUIT ROUND</li>
+              </ul>
+              <br><p>PROFESSIONAL TRAINING AND GROOMING SESSIONS WILL BE PROVIDED FOR ALL
+              CONTESTANTS SELECTED AS FINALISTS AFTER THE AUDITIONS.</p>
+              <br>
+            </div>
+          </div>
+          <br>
+
+          <h3>Personal Information</h3>
+          <h4>Entries marked with an <span class="star">&#42;</span> are required.</h4><br>
+
+          <form name="contactform" method="post" action="registration_form_email.php" enctype="multipart/form-data">
+
+            <!--required fields-->
+            <div class="input-group">
+              <label for="first_name"><span class="star">&#42;</span> First Name:</label>
+              <input type="text" id="first_name" name="first_name" maxlength="50" size="30">
+            </div>
+            <div class="input-group">
+              <label for="last_name"><span class="star">&#42;</span> Last Name:</label>
+              <input type="text" id="last_name" name="last_name" maxlength="50" size="30">
+            </div>
+            <div class="input-group">
+              <label for="residency_status"><span class="star">&#42;</span> Residency Status:</label>
+              <input type="text" id="residency_status" name="residency_status" maxlength="50" size="30">
+            </div>
+            <div class="input-group">
+              <label for="street_address"><span class="star">&#42;</span> Street Address:</label>
+              <input type="text" id="street_address" name="street_address" maxlength="50" size="30">
+            </div>
+            <div class="input-group">
+              <label for="postal_code"><span class="star">&#42;</span> Postal Code:</label>
+              <input type="text" id="postal_code" name="postal_code" maxlength="50" size="30">
+            </div>
+            <div class="input-group">
+              <label for="telephone"><span class="star">&#42;</span> Contact Number:</label>
+              <input type="text" id="telephone" name="telephone" maxlength="50" size="30">
+            </div>
+            <div class="input-group">
+            </div>
+            <div class="input-group">
+              <label for="email"><span class="star">&#42;</span> Email:</label>
+              <input type="text" id="email" name="email" maxlength="50" size="30" placeholder="you@email.com">
+            </div>
+            <div class="input-group">
+              <label for="date_of_birth"><span class="star">&#42;</span> Date of Birth:</label>
+              <input type="text" id="date_of_birth" name="date_of_birth" maxlength="50" size="30" placeholder="day month year">
+            </div>
+            <div class="input-group">
+              <label for="place_of_birth"><span class="star">&#42;</span> Place of Birth:</label>
+              <input  type="text" id="place_of_birth" name="place_of_birth" maxlength="50" size="30">
+            </div>
+            <br>
+            <br>
+
+            <!--optional fields-->
+            <h3>Background Information</h3>
+            <br>
+
+            <!--residency status radio buttons-->
+            <ul class="radio-group">
+              <li>
+                <input type="radio" id="citizen" name="status_value" value="citizen">
+                <label for="citizen">Citizen</label>
+              </li>
+              <li>
+                <input type="radio" id="permanent_resident" name="status_value" value="permanent_resident">
+                <label for="permanent_resident">Permanent Resident</label>
+              </li>
+              <li>
+                <input type="radio" id="other" name="status_value" value="other">
+                <label for="other">Other</label>
+              </li>
+            </ul>
+            <div class="input-group">
+              <label for="comments">If Other, please explain here:</label>
+              <textarea name="comments" rows="3" cols="28" id="comments"></textarea><br><br>
+            </div>
+
+            <div class="input-group">
+              <label for="languages_spoken">Languages Spoken:</label>
+              <input type="text" id="languages_spoken" name="languages_spoken" maxlength="50" size="30">
+            </div>
+            <div class="input-group">
+              <label for="occupation">Occupation:</label>
+              <input type="text" id="occupation" name="occupation" maxlength="50" size="30">
+            </div>
+            <div class="input-group">
+              <label for="education">Education:</label>
+              <input type="text" id="education" name="education" maxlength="50" size="30">
+            </div>
+            <br>
+            <br>
+
+            <!--image upload-->
+            <h3>Upload Photo</h3>
+            <br>
+
+            <div class="input-group">
+              <label for="file">Select Image:</label>
+              <input type="file" id="file" name="image" accept="image/&#42;">
+              <br>
+              <br>
+              <p class="ancillary">Acceptable Filetypes: jpg, jpeg, gif, png, bmp, pdf<br>Maximum Filesize: 4MB</p>
+            </div>
+            <br>
+            <br>
+
+            <h3>Health Information</h3>
+            <br>
+
+            <!--diet radio buttons-->
+            <ul class="radio-group">
+              <li>
+                <input type="radio" id="vegetarian" name="diet_value" value="vegetarian">
+                <label for="vegetarian">Vegetarian</label>
+              </li>
+              <li>
+                <input type="radio" id="non_vegetarian" name="diet_value" value="non_vegetarian">
+                <label for="non_vegetarian">Non-Vegetarian</label>
+              </li>
+            </ul>
+
+            <div class="input-group">
+              <label for="food_allergies">Food allergies:</label>
+              <input type="text" id="food_allergies" name="food_allergies" maxlength="50" size="30">
+            </div>
+            <div class="input-group">
+              <label for="dietary_needs">Any special dietary needs:</label>
+              <input type="text" id="dietary_needs" name="dietary_needs" maxlength="50" size="30">
+            </div>
+            <div class="input-group">
+              <label for="medications">Any medications you are taking:</label>
+              <input type="text" id="medications" name="medications" maxlength="50" size="30">
+            </div>
+            <br>
+            <br>
+
+            <p class="ancillary">I have read and agree to follow the Rules and Regulations for the pageant I wish to enter. I also certify that the information presented in this form is correct. I understand that the MSAE reserves all rights pertaining to this contest and its decision is final.</p>
+            <br>
+            <br>
+
+            <input type="submit" value="SEND" name="upload">
+
+          </form>
+
+        </div>
+      </div>
+
+      <div id="footer"><h4>Copyrights Reserved 2014</h4></div>
+    </div>
+  </body>
+</html>

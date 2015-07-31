@@ -1,0 +1,213 @@
+/****************************************
+ BREAKPOINTS FOR DEVICES
+*****************************************/
+
+
+/* digital devices and >= 480px width */
+/* common size for smartphones in landscape mode */
+
+@media screen and (min-width: 480px) {
+
+  /*----------------------------------------
+   PAGE ALL: Navigation, switch from drop-down
+  ------------------------------------------*/
+  nav#menu ul {
+    display: inherit;
+  }
+  select {
+    display: none;
+  }
+  
+  /*----------------------------------------
+   PAGE: PORTFOLIO, three-column layout
+  ------------------------------------------*/
+  ul#gallery li {
+    width: 28.333333333333333333333333333333%
+  }
+  
+  /* selects every 3rd item plus 1
+  (in our case, the first item in a new row,
+  which will hold true for the whole row thereafter) */
+  /* selects the 4th item, 7th item, 10th item, ... */
+  ul#gallery li:nth-child(3n + 1) {
+    clear: left
+  }
+  
+  /*----------------------------------------
+   PAGE: ABOUT, two-column layout
+  ------------------------------------------*/
+  section img.profile-photo {
+    float: left;
+    margin: 0 5% 550px 0;
+  }
+  
+  /*----------------------------------------
+   PAGE: CONTACT, two-column layout
+  ------------------------------------------*/
+  section#primary {
+    width: 50%;
+    float: left;
+  }
+  section#secondary {
+    width: 40%;
+    float: right;
+  }
+  
+  /*----------------------------------------
+   PAGE: Blog
+  ------------------------------------------*/
+  .blog-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 85%;
+  }
+  .blog-nav li {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+
+/* digital devices and >= 660px width */
+/* encapsulates large tablets and normal size desktops */
+
+@media screen and (min-width: 660px) {
+  
+  /*----------------------------------------
+   HEADER
+  ------------------------------------------*/
+  nav {
+    background: none; 
+    float: right; 
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 55%;
+  }
+  a#logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 35%
+  }
+  /* selected nav link */
+  nav a.selected, nav a:hover {
+    color: #f5f5f5;
+  }
+  h1, h2 {
+    color: #f5f5f5;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 0.825em;
+    margin-bottom: 20px;
+  }
+  header {
+    background-color: #1f8dd6;
+    border-bottom: 5px solid #2d3e50;
+    margin-bottom: 60px;
+  }
+  a {
+    color: #2d3e50;
+  }
+  
+  /*----------------------------------------
+   PAGE: PORTFOLIO
+  ------------------------------------------*/
+  #overlay img {
+	  margin-top: 3.5%;
+    max-width: 80%;
+  }
+  
+  /*----------------------------------------
+   PAGE: ABOUT, two-column layout
+  ------------------------------------------*/
+  section img.profile-photo {
+    float: left;
+    margin: 0 5% 280px 0;
+  }
+}
+
+
+/* >= 805px width */
+
+@media screen and (min-width: 805px) {
+  /*----------------------------------------
+   PAGE: Blog
+  ------------------------------------------*/
+  .blog-nav {
+    width: 100%;
+  }
+  section#blog-main {
+    width: 50%;
+    float: left;
+  }
+  section#blog-recent,
+  section#blog-tags {
+    width: 40%;
+    float: right;
+    margin-top: inherit;
+  }
+  section#blog-tags {
+    margin-top: 100px;
+  }
+}
+
+
+/* Print */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  #menu,
+  #blog-recent,
+  #blog-tags,
+  .box-overly, 
+  .image-overlay,
+  .symbol-overlay {
+    display: none;
+  }
+  .main-header {
+    margin-bottom: 0;
+    border: none;
+    text-align: center;
+  }
+  img {
+    max-width: 100px;
+  }
+  a[href^="http:"]::after { /* this will not print relative links such as the link for the logo in the our files */
+    content: " [" attr(href)"]";
+    color: blue;
+  }
+  a {
+    text-decoration: none;
+  }
+  @page { /* determines margins around the page */
+    margin: .5cm; /* @page :left, :right, :top, :bottom are options
+  }
+  @page :first { /* only applies to the first page */
+    margin-top: 2cm;
+  }
+  h2, h3, ul {
+    page-break-after: void; /* avoid page breaks after, must happen before */
+  }
+  p, ul {
+    orphans: 3; /* single words or stray lines after a page break; 3 = lines */
+    widows: 3; /* single words or stray lines that fall before a page break; 3 = lines*/
+    font-size: 11pt; /* use absolute units to reduce font size for PRINT */
+  }
+}
+
+
+
+

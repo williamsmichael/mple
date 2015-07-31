@@ -1,0 +1,85 @@
+/* Sandbox Layout
+ ---------------------------------------------- */
+
+html {
+  background: black url("../images/footer_lodyas.png");
+  color: #333;
+  font-family: open-sans, sans-serif;
+}
+a:link {
+  text-decoration: none;
+}
+h1 {
+  font-family: sarina;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: .45em;
+  font-size: 2em;
+  color: #54C06B;
+  text-shadow: 3px 4px 5px rgba(0, 0, 0, .6);
+  background-clip: text;
+}
+#sandbox {
+  background: url("../images/swirl_pattern.png");
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+}
+
+
+/* Overlay Preview
+ ---------------------------------------------- */
+.preview-container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 10px 10px 20px;
+  display: inline-block;
+}
+.preview-container,
+.preview-container img,
+.preview-overlay {
+  border-radius: 20px;
+}
+.preview-container img,
+.preview-overlay {
+  width: 100%;
+  height: 100%;
+}
+.preview-overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.10s ease-in;
+  transition: 0.10s ease-in;
+  z-index: 0 !important;
+  text-align: center;
+  display: table;
+}
+.preview-text {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: sans-serif;
+  font-size: 3em;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: inherit;
+}
+.preview-text-background {
+  background: rgba(255, 255, 255, .8);
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.preview-overlay:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, .75)
+}

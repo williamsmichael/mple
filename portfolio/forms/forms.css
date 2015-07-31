@@ -1,0 +1,323 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,p,h1,h2,h3,h4,h5,h6,div,ul,ol,li,a{
+	margin:0;
+	padding:0;
+}
+
+h2{
+	font-family:Arial;
+	font-size:24px;
+}
+
+h3{
+	font-family:Arial;
+	font-size:19px;
+}
+body{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:15px;
+	color:#000;
+	background-color:#000;
+}
+
+#header{
+	width:1028px;
+	margin:0 auto;
+}
+
+#logo img{
+	width:208px;
+	height:208px;
+	float:left;
+}
+
+#menu{
+	float:right;
+}
+
+#menu_bar{
+	background-color:#8c1033;
+	height:57px;
+}
+
+#menu_bar ul li{
+	display:inline-block;
+	margin-top:20px;
+	margin-right:30px;
+}
+
+#menu_bar ul li a{
+	font-family:Arial;
+	font-size:18px;
+	text-decoration:none;
+	color:#FFF;
+}
+
+#name{
+	background-color:#dd436e;
+	height:171px;
+}
+
+#name p{
+	font-family:Edwardian Script ITC;
+	font-size:40px;
+	float:right;
+	margin-right:70px;
+	margin-top:20px;
+	color:#FFF;
+}
+
+.wrapper{
+	width:908px;
+	margin:0 auto;
+}
+
+#content{
+	background-color:#FFF;
+	width:1028px;
+	height:auto;
+	margin:0 auto;
+	padding-top:8px;
+}
+
+#VIDEO{
+	background-color:#7b7b7b;
+	height:427px;
+	margin-top:20px;
+	<!--padding-bottom:20px;-->
+}
+
+<!--#VIDEO h3{
+	font-size:36px;
+	padding-left:400px;
+    padding-top:213px;
+}-->
+
+#lower_mid_content{
+	height:auto;
+}
+
+#lower_mid_content ul{
+	font-family:Arial;
+	width:30%;
+	height:auto;
+	list-style-type:none;
+	float:left;
+	margin-top:20px;
+	margin-right:10px;
+	margin-left:10px;
+	/*background-image:url(../Images/partition_img.png);*/
+
+}
+
+.partition img{
+	width:5px;
+	height:150px;
+	float:left;
+	margin-top:15px;
+}
+
+#lower_mid_content ul li{
+	margin-top:5px;
+}
+
+#lower_mid_content ul li h4{
+	font-family:Arial;
+	font-size:24px;
+}
+
+#lower_mid_content ul li p{
+	font-family:Times New Roman;
+	font-size:16px;
+}
+
+#lower_mid_content ul li a{
+	text-decoration:none;
+	color:#000;
+	margin-left:150px;
+	font-family:Arial;
+	color:#03F;
+	text-decoration:underline;
+}
+
+#footer{
+	background-image:url(../Images/Footer_img.jpg);
+	width:1028px;
+	height:59px;
+	margin:0 auto;
+}
+
+#footer h4{
+	font-family:Times New Roman;
+	color:#FFF;
+	margin-left:430px;
+	padding-top:20px;
+}
+
+#registration_content ul li{
+	list-style-type:none;
+}
+
+#audition ul li{
+	list-style-type:none;
+}
+
+/* #contact{
+	font-family:"Times New Roman";
+} */
+
+#about_content p{
+	font-family:Times New Roman;
+	font-size:18px;
+	padding-bottom:10px;
+}
+
+#registration_content ul li{
+	font-family:Times New Roman;
+	font-size:18px;
+}
+
+#audition ul li{
+	font-family:Times New Roman;
+	font-size:18px;
+}
+
+#contact li{
+	font-family:"Times New Roman";
+	font-size:20px;
+	list-style-type:none;
+}
+
+#Img_Gallery ul{
+	list-style-type:none;
+	margin-left:30px;
+	margin-bottom:0;
+}
+
+#Img_Gallery ul li{
+	display:inline-block;
+}
+
+#Img_Names ul{
+	width:900px;
+	list-style-type:none;
+	float:left;
+	font-family:Times New Roman;
+	font-size:16px;
+}
+
+#Img_Names ul li{
+	display:inline-block;
+	height:20px;
+}
+
+#Img_Names_bottom ul{
+	width:900px;
+	list-style-type:none;
+	float:left;
+	font-family:Times New Roman;
+	font-size:16px;
+}
+
+#Img_Names ul li{
+	display:inline-block;
+}
+
+#Img_Gallery_Bottom ul{
+	list-style-type:none;
+	margin-left:20%;
+}
+
+#Img_Gallery_Bottom li{
+	display:inline-block;
+}
+
+/* mple changes
+ ----------------------------------- */
+#logo {
+  margin-left: 30px;
+}
+h4 {
+  font-family: Arial;
+  font-size: 14px;
+}
+input[type="submit"] {
+  background-color: #dd436e;
+  color: #FFF;
+  padding: .5em 3em;
+  font-size: 1.5em
+}
+.star {
+  color: red;
+  font-size: 1.4em;
+}
+.input-group,
+.radio-group,
+.ancillary {
+  font-family: sans-serif;
+  font-size: 1.1em;
+}
+.ancillary {
+  color: #003399;
+  font-size: 14px;
+}
+.input-group label,
+.radio-group label {
+  display: inline-block;
+  width: 250px;
+  margin: .5em;
+  padding: .2em;
+}
+.radio-group label {
+  width: 175px;
+}
+.radio-group li {
+  list-style: none;
+  display: inline-block;
+}
+.input-group input,
+.input-group textarea {
+  padding: .2em .3em;
+  font-size: inherit;
+  background: #E8EBED;
+  color: #333;
+  border: 1px solid #b2b2b2;
+}
+.input-group textarea {
+  margin-top: 1em;
+}
+input[type="text"]:focus,
+.input-group textarea:focus {
+  background: #fff;
+}
+input[value="SEND"] {
+  margin-bottom: 30px;
+}
+input[type="file"] {
+  background: inherit;
+  border: inherit;
+}
+.input-group#contact_comments label,
+.input-group#contact_comments textarea {
+  display: block;
+}
+.input-group#contact_comments textarea {
+  margin-top: 0;
+  margin-left: 10px;
+}
+#contact {
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+#contact p {
+  font-size: 1.2em;
+  color: #333;
+}
+#contact a {
+  text-decoration: none;
+}
+#registration_content {
+  font-family: sans-serif;
+}
