@@ -31,7 +31,7 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
@@ -254,7 +254,7 @@ header h1 {
   display: table;
   clear: both;
 }
-.cd-timeline-content h2 {
+.cd-timeline-content h2, .cd-timeline-content h3 {
   color: #303e49;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
@@ -274,6 +274,12 @@ header h1 {
   background: #acb7c0;
   color: white;
   border-radius: 0.25em;
+}
+.cd-timeline-block .cd-read-more {
+  margin-left: 0.4em;
+}
+.cd-timeline-block .cd-read-more:last-of-type {
+  margin-left: 0;
 }
 .no-touch .cd-timeline-content .cd-read-more:hover {
   background-color: #bac4cb;
@@ -297,6 +303,10 @@ header h1 {
   .cd-timeline-content h2 {
     font-size: 20px;
     font-size: 1.25rem;
+  }
+  .cd-timeline-content h3 {
+    font-size: 18px;
+    font-size: 1.125rem;
   }
   .cd-timeline-content p {
     font-size: 16px;
@@ -322,6 +332,12 @@ header h1 {
   .cd-timeline-content .cd-read-more {
     float: left;
   }
+  .cd-timeline-block .cd-read-more {
+    margin-right: 0.4em;
+  }
+  .cd-timeline-block .cd-read-more:last-of-type {
+    margin-right: 0;
+  }
   .cd-timeline-content .cd-date {
     position: absolute;
     width: 100%;
@@ -342,6 +358,12 @@ header h1 {
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;
+  }
+  .cd-timeline-block:nth-child(even) .cd-read-more {
+    margin-left: 0.4em;
+  }
+  .cd-timeline-block:nth-child(even) .cd-read-more:last-of-type {
+    margin-left: 0;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
     left: auto;
